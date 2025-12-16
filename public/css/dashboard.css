@@ -1,0 +1,417 @@
+.limiter-mkp-pro-dashboard-wrapper {
+    background-color: #f8f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.limiter-mkp-pro-dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.limiter-mkp-pro-logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.limiter-mkp-pro-logo-header img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.limiter-mkp-pro-logo-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.limiter-mkp-pro-subtitle h2 {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+/* Cards de Estatísticas */
+.limiter-mkp-pro-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.limiter-mkp-pro-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.limiter-mkp-pro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.limiter-mkp-pro-card:nth-child(1) {
+    border-top: 4px solid #4e73df;
+}
+
+.limiter-mkp-pro-card:nth-child(2) {
+    border-top: 4px solid #1cc88a;
+}
+
+.limiter-mkp-pro-card:nth-child(3) {
+    border-top: 4px solid #f6c23e;
+}
+
+.limiter-mkp-pro-card:nth-child(4) {
+    border-top: 4px solid #e74a3b;
+}
+
+.limiter-mkp-pro-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.limiter-mkp-pro-card-header h3 {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.limiter-mkp-pro-card-icon {
+    font-size: 24px;
+    color: #dddfeb;
+}
+
+.limiter-mkp-pro-card-content {
+    text-align: center;
+}
+
+.limiter-mkp-pro-card-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.limiter-mkp-pro-card-description {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Seção de Progresso */
+.limiter-mkp-pro-progress-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.limiter-mkp-pro-progress-section h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.limiter-mkp-pro-progress-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.limiter-mkp-pro-progress-detail {
+    display: flex;
+    align-items: center;
+}
+
+.limiter-mkp-pro-detail-label {
+    font-size: 14px;
+    color: #666;
+    margin-right: 5px;
+}
+
+.limiter-mkp-pro-detail-value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.limiter-mkp-pro-progress-warning-text {
+    color: #e74a3b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.limiter-mkp-pro-progress-warning-text .dashicons {
+    margin-right: 5px;
+}
+
+/* Seção de Solicitações */
+.limiter-mkp-pro-solicitations-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.limiter-mkp-pro-solicitations-section h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.limiter-mkp-pro-solicitacao-pendente-card {
+    background-color: #f8f9fc;
+    border-left: 4px solid #4e73df;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.limiter-mkp-pro-solicitacao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.limiter-mkp-pro-solicitacao-header h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.limiter-mkp-pro-solicitacao-status {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.limiter-mkp-pro-solicitacao-details {
+    margin-bottom: 15px;
+}
+
+.limiter-mkp-pro-solicitacao-detail {
+    margin-bottom: 5px;
+}
+
+.limiter-mkp-pro-solicitar-plano-container {
+    margin-bottom: 20px;
+}
+
+.limiter-mkp-pro-planos-disponiveis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.limiter-mkp-pro-plano-option {
+    background-color: #f8f9fc;
+    border: 1px solid #e3e6f0;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.limiter-mkp-pro-plano-option:hover {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 1px #4e73df;
+}
+
+.limiter-mkp-pro-plano-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.limiter-mkp-pro-plano-nome {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.limiter-mkp-pro-plano-limite {
+    color: #4e73df;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.limiter-mkp-pro-plano-descricao {
+    font-size: 13px;
+    color: #666;
+    display: block;
+}
+
+.limiter-mkp-pro-form-group {
+    margin-bottom: 15px;
+}
+
+.limiter-mkp-pro-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Histórico de Solicitações */
+.limiter-mkp-pro-historico-section {
+    margin-top: 20px;
+}
+
+.limiter-mkp-pro-historico-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.limiter-mkp-pro-historico-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.limiter-mkp-pro-historico-table th,
+.limiter-mkp-pro-historico-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.limiter-mkp-pro-historico-table th {
+    background-color: #f8f9fc;
+    font-weight: bold;
+    color: #333;
+}
+
+.limiter-mkp-pro-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.limiter-mkp-pro-status-pendente {
+    background-color: #f6c23e;
+}
+
+.limiter-mkp-pro-status-aprovada {
+    background-color: #1cc88a;
+}
+
+.limiter-mkp-pro-status-rejeitada {
+    background-color: #e74a3b;
+}
+
+/* Dicas e Informações */
+.limiter-mkp-pro-tips-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.limiter-mkp-pro-tips-section h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.limiter-mkp-pro-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.limiter-mkp-pro-tip {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f9fc;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.limiter-mkp-pro-tip .dashicons {
+    color: #4e73df;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.limiter-mkp-pro-tip p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Sem Plano */
+.limiter-mkp-pro-no-plan {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.limiter-mkp-pro-no-plan-icon {
+    margin-bottom: 20px;
+}
+
+.limiter-mkp-pro-no-plan-icon .dashicons {
+    font-size: 48px;
+    color: #f6c23e;
+}
+
+.limiter-mkp-pro-no-plan h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.limiter-mkp-pro-no-plan p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .limiter-mkp-pro-stats-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .limiter-mkp-pro-stats-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .limiter-mkp-pro-progress-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .limiter-mkp-pro-progress-warning-text {
+        margin-top: 10px;
+    }
+    
+    .limiter-mkp-pro-tips {
+        grid-template-columns: 1fr;
+    }
+}

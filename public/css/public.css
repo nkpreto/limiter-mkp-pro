@@ -1,0 +1,169 @@
+.limiter-mkp-pro-widget {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.limiter-mkp-pro-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.limiter-mkp-pro-logo img {
+    max-width: 200px;
+    height: auto;
+}
+.limiter-mkp-pro-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.limiter-mkp-pro-plano {
+    font-weight: bold;
+    color: #4e73df;
+}
+.limiter-mkp-pro-progress-container {
+    margin: 15px 0;
+}
+.limiter-mkp-pro-progress-bar {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    height: 20px;
+    overflow: hidden;
+}
+.limiter-mkp-pro-progress {
+    background-color: #4e73df;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease;
+}
+.limiter-mkp-pro-progress-warning {
+    background-color: #e74a3b;
+}
+.limiter-mkp-pro-progress-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.limiter-mkp-pro-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.limiter-mkp-pro-stat {
+    text-align: center;
+    flex: 1;
+}
+.limiter-mkp-pro-stat-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+.limiter-mkp-pro-stat-value {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.limiter-mkp-pro-actions {
+    margin: 20px 0;
+}
+.limiter-mkp-pro-solicitacao-pendente {
+    background-color: #f8f9fc;
+    border-left: 4px solid #4e73df;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.limiter-mkp-pro-solicitar-plano-form {
+    background-color: #f8f9fc;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+.limiter-mkp-pro-solicitar-plano-form h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.limiter-mkp-pro-plano-select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.limiter-mkp-pro-notas {
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+.limiter-mkp-pro-form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+.limiter-mkp-pro-dashboard-link {
+    text-align: center;
+    margin-top: 15px;
+}
+.limiter-mkp-pro-no-plan {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 4px;
+}
+/* Modal de mensagem */
+.limiter-mkp-pro-message-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.limiter-mkp-pro-message-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+.limiter-mkp-pro-message-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.limiter-mkp-pro-message-ok {
+    display: block;
+    margin: 15px auto 0;
+}
+/* NOVOS ESTILOS PARA O CONTROLE DE INODES */
+.limiter-mkp-pro-inode-panel {
+    background: #f8f9fc;
+    border: 1px solid #e3e6f0;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .limiter-mkp-pro-stats {
+        flex-direction: column;
+    }
+    .limiter-mkp-pro-stat {
+        margin-bottom: 10px;
+    }
+    .limiter-mkp-pro-form-actions {
+        flex-direction: column;
+    }
+    .limiter-mkp-pro-form-actions button {
+        margin-bottom: 10px;
+    }
+}

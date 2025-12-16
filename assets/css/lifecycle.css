@@ -1,0 +1,964 @@
+/**
+ * Estilos para o sistema de ciclo de vida do Limiter MKP Pro
+ * 
+ * @version 2.0.0
+ */
+
+/* ==========================================================================
+   Configurações Gerais
+   ========================================================================== */
+
+.limiter-lifecycle-settings,
+.limiter-churn-dashboard {
+    padding: 20px;
+    background: #f8f9fa;
+    min-height: calc(100vh - 60px);
+}
+
+.limiter-settings-section,
+.limiter-dashboard-section {
+    background: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.limiter-settings-section h2,
+.limiter-dashboard-section h2 {
+    color: #4e73df;
+    border-bottom: 2px solid #4e73df;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.limiter-settings-section h3,
+.limiter-dashboard-section h3 {
+    color: #5a5c69;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+   Formulários
+   ========================================================================== */
+
+.limiter-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.limiter-form-table th {
+    width: 250px;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+    color: #5a5c69;
+    vertical-align: top;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.limiter-form-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.limiter-form-table tr:last-child th,
+.limiter-form-table tr:last-child td {
+    border-bottom: none;
+}
+
+.limiter-form-table input[type="text"],
+.limiter-form-table input[type="email"],
+.limiter-form-table input[type="number"],
+.limiter-form-table input[type="url"],
+.limiter-form-table select {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #d1d3e2;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.limiter-form-table input[type="text"]:focus,
+.limiter-form-table input[type="email"]:focus,
+.limiter-form-table input[type="number"]:focus,
+.limiter-form-table input[type="url"]:focus,
+.limiter-form-table select:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.limiter-form-table textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 12px;
+    border: 1px solid #d1d3e2;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.limiter-form-table textarea.code {
+    font-family: 'Courier New', monospace;
+    background: #f8f9fa;
+}
+
+.limiter-form-table .description {
+    color: #858796;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   Cartões de Estatísticas
+   ========================================================================== */
+
+.limiter-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.limiter-stat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 4px solid #4e73df;
+    transition: transform 0.3s ease;
+}
+
+.limiter-stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.limiter-stat-card.warning {
+    border-left-color: #f6c23e;
+}
+
+.limiter-stat-card.danger {
+    border-left-color: #e74a3b;
+}
+
+.limiter-stat-card.success {
+    border-left-color: #1cc88a;
+}
+
+.limiter-stat-card .stat-title {
+    color: #5a5c69;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.limiter-stat-card .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4e73df;
+    margin: 10px 0;
+}
+
+.limiter-stat-card.warning .stat-value {
+    color: #f6c23e;
+}
+
+.limiter-stat-card.danger .stat-value {
+    color: #e74a3b;
+}
+
+.limiter-stat-card.success .stat-value {
+    color: #1cc88a;
+}
+
+.limiter-stat-card .stat-change {
+    font-size: 12px;
+    color: #858796;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.limiter-stat-card .stat-change.positive {
+    color: #1cc88a;
+}
+
+.limiter-stat-card .stat-change.negative {
+    color: #e74a3b;
+}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+
+.limiter-table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.limiter-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.limiter-table thead {
+    background: #f8f9fa;
+}
+
+.limiter-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #5a5c69;
+    border-bottom: 2px solid #e3e6f0;
+    white-space: nowrap;
+}
+
+.limiter-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e3e6f0;
+    vertical-align: middle;
+}
+
+.limiter-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.limiter-table .status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.limiter-table .status-active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.limiter-table .status-grace_period {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.limiter-table .status-suspended {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.limiter-table .status-locked {
+    background: #dc3545;
+    color: white;
+}
+
+.limiter-table .status-scheduled_deletion {
+    background: #6c757d;
+    color: white;
+}
+
+.limiter-table .priority-high {
+    color: #e74a3b;
+    font-weight: 600;
+}
+
+.limiter-table .priority-medium {
+    color: #f6c23e;
+    font-weight: 600;
+}
+
+.limiter-table .priority-low {
+    color: #1cc88a;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Botões e Ações
+   ========================================================================== */
+
+.limiter-actions-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e3e6f0;
+    flex-wrap: wrap;
+}
+
+.limiter-action-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.limiter-action-btn-primary {
+    background: #4e73df;
+    color: white;
+}
+
+.limiter-action-btn-primary:hover {
+    background: #2e59d9;
+    transform: translateY(-1px);
+}
+
+.limiter-action-btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.limiter-action-btn-secondary:hover {
+    background: #5a6268;
+}
+
+.limiter-action-btn-success {
+    background: #1cc88a;
+    color: white;
+}
+
+.limiter-action-btn-success:hover {
+    background: #17a673;
+}
+
+.limiter-action-btn-warning {
+    background: #f6c23e;
+    color: #212529;
+}
+
+.limiter-action-btn-warning:hover {
+    background: #f4b619;
+}
+
+.limiter-action-btn-danger {
+    background: #e74a3b;
+    color: white;
+}
+
+.limiter-action-btn-danger:hover {
+    background: #e02d1b;
+}
+
+.limiter-action-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.limiter-table-actions {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.limiter-table-action-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.limiter-table-action-btn-email {
+    background: #4e73df;
+    color: white;
+}
+
+.limiter-table-action-btn-extend {
+    background: #f6c23e;
+    color: #212529;
+}
+
+.limiter-table-action-btn-restore {
+    background: #1cc88a;
+    color: white;
+}
+
+.limiter-table-action-btn-suspend {
+    background: #858796;
+    color: white;
+}
+
+.limiter-table-action-btn-delete {
+    background: #e74a3b;
+    color: white;
+}
+
+/* ==========================================================================
+   Checkboxes e Seleção
+   ========================================================================== */
+
+.limiter-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.limiter-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.limiter-select-all {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   Progress Bars
+   ========================================================================== */
+
+.limiter-progress-bar {
+    height: 20px;
+    background: #eaecf4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+}
+
+.limiter-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4e73df 0%, #2e59d9 100%);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.limiter-progress-fill.warning {
+    background: linear-gradient(90deg, #f6c23e 0%, #f4b619 100%);
+}
+
+.limiter-progress-fill.danger {
+    background: linear-gradient(90deg, #e74a3b 0%, #e02d1b 100%);
+}
+
+.limiter-progress-fill.success {
+    background: linear-gradient(90deg, #1cc88a 0%, #17a673 100%);
+}
+
+.limiter-progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+/* ==========================================================================
+   Tabs e Navegação
+   ========================================================================== */
+
+.limiter-tabs {
+    display: flex;
+    border-bottom: 2px solid #e3e6f0;
+    margin-bottom: 25px;
+}
+
+.limiter-tab {
+    padding: 12px 25px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a5c69;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.limiter-tab:hover {
+    color: #4e73df;
+}
+
+.limiter-tab.active {
+    color: #4e73df;
+}
+
+.limiter-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #4e73df;
+}
+
+.limiter-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.limiter-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ==========================================================================
+   Modais
+   ========================================================================== */
+
+.limiter-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.limiter-modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.limiter-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #e3e6f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.limiter-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a5c69;
+    margin: 0;
+}
+
+.limiter-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #858796;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.limiter-modal-close:hover {
+    background: #f8f9fa;
+}
+
+.limiter-modal-body {
+    padding: 20px;
+}
+
+.limiter-modal-footer {
+    padding: 20px;
+    border-top: 1px solid #e3e6f0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   Notificações e Alertas
+   ========================================================================== */
+
+.limiter-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10000;
+    animation: slideInRight 0.3s ease;
+    max-width: 400px;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.limiter-notification-success {
+    background: #1cc88a;
+    border-left: 4px solid #17a673;
+}
+
+.limiter-notification-error {
+    background: #e74a3b;
+    border-left: 4px solid #e02d1b;
+}
+
+.limiter-notification-warning {
+    background: #f6c23e;
+    border-left: 4px solid #f4b619;
+    color: #212529;
+}
+
+.limiter-notification-info {
+    background: #4e73df;
+    border-left: 4px solid #2e59d9;
+}
+
+/* ==========================================================================
+   Loaders e Estados de Carregamento
+   ========================================================================== */
+
+.limiter-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+}
+
+.limiter-loader .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4e73df;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.limiter-loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.limiter-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #4e73df;
+}
+
+/* ==========================================================================
+   Tooltips
+   ========================================================================== */
+
+.limiter-tooltip {
+    position: absolute;
+    background: #212529;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1000;
+    max-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 0.2s ease;
+    pointer-events: none;
+}
+
+.limiter-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #212529 transparent transparent;
+}
+
+/* ==========================================================================
+   Filtros e Busca
+   ========================================================================== */
+
+.limiter-filters {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e3e6f0;
+    margin-bottom: 20px;
+}
+
+.limiter-filter-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.limiter-filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.limiter-filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #5a5c69;
+    font-size: 14px;
+}
+
+.limiter-search-box {
+    position: relative;
+}
+
+.limiter-search-box input {
+    padding-left: 40px;
+}
+
+.limiter-search-box::before {
+    content: '🔍';
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #858796;
+}
+
+/* ==========================================================================
+   Responsividade
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .limiter-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .limiter-form-table {
+        display: block;
+    }
+    
+    .limiter-form-table thead {
+        display: none;
+    }
+    
+    .limiter-form-table tbody,
+    .limiter-form-table tr,
+    .limiter-form-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .limiter-form-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #e3e6f0;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    
+    .limiter-form-table td {
+        padding: 10px 15px;
+        border: none;
+        border-top: 1px solid #e3e6f0;
+    }
+    
+    .limiter-form-table td:first-child {
+        border-top: none;
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #5a5c69;
+    }
+    
+    .limiter-actions-bar {
+        flex-direction: column;
+    }
+    
+    .limiter-action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .limiter-table-actions {
+        flex-direction: column;
+    }
+    
+    .limiter-modal-content {
+        width: 95%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .limiter-settings-section,
+    .limiter-dashboard-section {
+        padding: 15px;
+    }
+    
+    .limiter-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .limiter-tab {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* ==========================================================================
+   Utilitários
+   ========================================================================== */
+
+.limiter-text-muted {
+    color: #858796;
+}
+
+.limiter-text-success {
+    color: #1cc88a;
+}
+
+.limiter-text-warning {
+    color: #f6c23e;
+}
+
+.limiter-text-danger {
+    color: #e74a3b;
+}
+
+.limiter-text-info {
+    color: #4e73df;
+}
+
+.limiter-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 4px;
+}
+
+.limiter-badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.limiter-badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.limiter-badge-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.limiter-badge-info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.limiter-divider {
+    height: 1px;
+    background: #e3e6f0;
+    margin: 25px 0;
+    border: none;
+}
+
+.limiter-help-text {
+    font-size: 13px;
+    color: #858796;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.limiter-required::after {
+    content: '*';
+    color: #e74a3b;
+    margin-left: 4px;
+}
